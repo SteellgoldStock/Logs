@@ -1,0 +1,11 @@
+players:
+  - "Steellgold"
+items:
+  - "256:0"
+  - "1:1"
+
+send-status: true # Send "connect" and "disconnect" messages to webhook when plugin load / unload
+webhook-url: 'WEBHOOK_URL'
+webhook-name: 'Logger' # Set PLAYER_NAME to set automatically the name of player dropped item
+webhook-avatar: null # Keep null for default discord avatar
+webhook-content: "Username: **{USERNAME}**\nItem: **{ITEM_NAME}** ({ITEM_ID}:{ITEM_META})\nDropped amount: **{COUNT}**\nWorld: {WORLD_NAME}"
